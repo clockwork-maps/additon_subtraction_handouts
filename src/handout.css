@@ -1,0 +1,39 @@
+.handout{
+    --cWidth: 90%;
+    --cMargin: 5%;
+    --primeColor: #282828;
+    --secondColor: #ffffff;
+    width: 8.5in;
+    height: 11in;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: var(--primeColor);
+    background-color: var(--secondColor);
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.25rem;
+    margin-inline: auto;
+  }
+  
+  .hHeader{
+    width: var(--cWidth);
+    margin-inline: var(--cMargin);
+    margin-block: 40px;
+  }
+  
+  .hhInfo{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+  }
+  
+  .hhInfo:first-of-type{
+    margin-inline-end: 20%;
+  }
+  
+  .hhInfo:hover{
+    background-color: var(--primeColor);
+    color: var(--secondColor);
+  }

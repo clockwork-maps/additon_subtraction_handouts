@@ -1,0 +1,27 @@
+.problem{ 
+    width: 5ch;
+    text-align: end;
+    place-self: center;
+    display: grid;
+    grid-template-areas: ". . n1" "sym . n2" "nl nl nl" ". . answer";
+}
+.n1{
+    grid-area: n1;
+}
+.n2{
+    grid-area: n2;
+}
+.sym{
+    grid-area: sym;
+    text-align: start;
+}
+.nl{
+    grid-area: nl;
+    width: 100%;
+}
+.answer{
+    grid-area: answer;
+}
+.problems[data-answer="false"] > .problem > .answer {
+    color: rgba(0,0,0,0);
+}

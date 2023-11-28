@@ -1,0 +1,34 @@
+.rHolder{
+    width: var(--cWidth);
+    margin-inline: var(--cMargin);
+    margin-block-end: 25px;
+    height: 75px;
+    position: relative;
+    border: 1px solid var(--primeColor);
+    border-radius: 10px;
+}
+
+.rhInfo{
+    position: absolute;
+    top: -1.1rem;
+    left: 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.25rem;
+    min-width: 5ch;
+    width: fit-content;
+    max-width: 8ch;
+    padding: .25rem;
+    background-color: var(--primeColor);
+    color: var(--secondColor);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.svgRange{
+    width: 100%;
+}
+
+.tick > text {
+    font-size: 1rem;
+}

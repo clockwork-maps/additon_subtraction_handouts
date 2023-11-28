@@ -1,0 +1,7 @@
+.problems{
+    flex-grow: 1;
+    display: grid;
+    width: var(--cWidth);
+    margin-inline: var(--cMargin);
+    padding-block-end: 50px;
+}

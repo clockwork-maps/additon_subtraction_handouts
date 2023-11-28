@@ -1,0 +1,81 @@
+*, html, main{
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  width: 100vw;
+}
+
+.controls {
+  position: relative;
+  width: 8.5in;
+  height: 100px;
+  margin-inline: auto;
+  border: 2px solid #282828;
+  border-radius: 0 0 8px 8px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.ctrlHeader{
+  height: 50px;
+  width: 100%;
+  background-color: #282828;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ctrlHeader > * ,
+.cProper > * {
+ margin-inline: 5px; 
+}
+
+.chInfo{
+  font-size: 1.5rem;
+  line-height: 50px;
+}
+
+.refresh,
+.ctrlPrint{
+  height: 40px;
+  line-height: 10px;
+  margin-block: auto;
+  padding: 0;
+}
+
+.refresh {
+  width: 8ch;
+}
+
+.ctrlPrint{
+  background-color: #f8eb11;
+  width: 6ch;
+}
+
+.ctrlPrint:hover{
+  border: none;
+}
+
+.cProper {
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+}
+
+.cProper > * {
+  line-height: 50px;
+}
+
+.cinput {
+  height: 30px;
+  font-size: 1.25rem;
+  width: 5ch;
+}
+
+@media print {
+  .controls{
+    display: none !important;
+  }
+}
