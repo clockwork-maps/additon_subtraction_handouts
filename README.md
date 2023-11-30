@@ -1,30 +1,9 @@
-# React + TypeScript + Vite
+# Addition & Subtraction handout generator  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application is a simple print handout generator that generates a number of standardly formatted math problems specified by the rows & columns controls (1-25). The inputs for rows & columns can be arrow key incremented with the up and down arrow keys or the input field can take the last typed number so long as that number is 1-5. The input for the limit field can be arrow key incremented, or the input can be erased and typed up to 3 digits. The lower bound of the limit field is 0, but this results in some rather nonsensical problems and should probably best be avoided. Additionally, on-page text can be freely changed up to a certain text length by simply clicking on the field and typing over it if there's a preference for a specific term and/or need for localization.
 
-Currently, two official plugins are available:
+The handouts also come with a range input in both the problem and answer pages. These are helpful for beginning math students by allowing them to count forwards or backwards on the number line to reach an answer, and also allow more advanced students to keep in mind what range answers _should_ be within.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+When the math sheets are ready at the desired problem amount and number limit, one can press the `Print` button to save the pages either together or seperately using a browser's PDF generation tools. If you'd like to produce multiple sets of problem/answer page pairs, press the `Refresh` button to generate a new page with the same settings. 
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Currently missing mobile formatting, but that is coming.
