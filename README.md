@@ -6,4 +6,4 @@ The handouts also come with a range input in both the problem and answer pages. 
 
 When the math sheets are ready at the desired problem amount and number limit, one can press the `Print` button to save the pages either together or seperately using a browser's PDF generation tools. If you'd like to produce multiple sets of problem/answer page pairs, press the `Refresh` button to generate a new page with the same settings. 
 
-Currently missing mobile formatting, but that is coming.
+Mobile formatting is in some sort of beta stage. The range section of the handouts doesn't render or rerender properly if the handout is transformed via `scale()` call. Don't know if or when this will be fixed, as this could be either a react or d3 problem and while a bit ugly it currently works perfectly fine. 

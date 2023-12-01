@@ -16,24 +16,35 @@
     margin-inline: auto;
   }
   
-  .hHeader{
-    width: var(--cWidth);
-    margin-inline: var(--cMargin);
-    margin-block: 40px;
+.hHeader{
+  width: var(--cWidth);
+  margin-inline: var(--cMargin);
+  margin-block: 40px;
+}
+
+.hhInfo{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+}
+
+.hhInfo:first-of-type{
+  margin-inline-end: 20%;
+}
+
+.hhInfo:hover{
+  background-color: var(--primeColor);
+  color: var(--secondColor);
+}
+
+@media (width < 1040px) {
+  .handout:first-of-type {
+    margin-block-start: 105px;
   }
-  
-  .hhInfo{
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 1.25rem;
-    border: none;
-    outline: none;
+}
+@media print {
+  .handout:first-of-type{
+    margin-block-start: 0px !important;
   }
-  
-  .hhInfo:first-of-type{
-    margin-inline-end: 20%;
-  }
-  
-  .hhInfo:hover{
-    background-color: var(--primeColor);
-    color: var(--secondColor);
-  }
+}

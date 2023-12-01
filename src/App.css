@@ -74,6 +74,22 @@ main{
   width: 5ch;
 }
 
+@media (width < 1040px) {
+  .controls {
+    position: fixed;
+    inset-inline: 0;
+    inset-block-start: 0;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    border-block-end: 1px solid #282828;
+    border-radius: 0 0 0 0;
+  }
+  .cinput, .chInfo {
+    font-size: 1rem;
+  }
+}
+
 @media print {
   .controls{
     display: none !important;
